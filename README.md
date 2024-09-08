@@ -43,6 +43,15 @@ _Your portal to Pokémon data and epic translations!_
    http://localhost:8080/swagger
    
 #### **Docker Setup**
+- **Build the Docker image**:
+   ```bash  
+   docker build -t pokedexapi .
+
+- **Run the Docker container**:
+   ```bash  
+   docker run -d -p 8080:8080 pokedexapi
+
+#### **Key endpoints**
 - **Get Pokémon Info**:
    ```bash  
    GET /api/pokemon/{name}
